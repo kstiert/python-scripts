@@ -1,0 +1,2 @@
+class YnabClient:
+    None
