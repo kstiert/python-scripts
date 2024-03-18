@@ -1,5 +1,6 @@
+from __future__ import annotations
+
 from os import path
-from typing import Self
 
 import jsons
 
@@ -14,7 +15,7 @@ class Configuration:
     homeassistant: HomeassistantConfiguration
 
     @staticmethod
-    def load_config_file() -> Self:
+    def load_config_file() -> Configuration:
         with open(path.join(path.expanduser("~"), CONFIG_PATH), "r") as conf:
             json_conf = conf.read()
         return jsons.loads(json_conf, Configuration)

@@ -9,7 +9,7 @@ backend_packages = [
 ]
 
 [python]
-interpreter_constraints = ["CPython>=3.11"]
+interpreter_constraints = [">=3.11,<3.12"]
 enable_resolves = true
 
 [python-bootstrap]
